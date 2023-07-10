@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Calculadora Online</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__apresentacao">
+           <a href="index.html" class="cabecalho__apresentacao__links">Início</a>
+           <a href="calculadora.html" class="cabecalho__apresentacao__links">Calculadora</a>
+       </nav>
+   </header>
+   <main class="apresentacao">
+    <form class="apresentacao__conteudo__form">
+        <section class="apresentacao__conteudo__operacao">
+            <section class="apresentacao__conteudo__operacao__separacao">
+                <section class="divisao__numeros">
+                    <div>
+                        <p class="apresentacao__paragrafos">Insira o primeiro valor</p>
+                        <input class="apresentacao__input" type="number" id="primeirovalor">
+                    </div>
+                    <div>
+                        <p class="apresentacao__paragrafos">Insira o segundo valor</p>
+                    <input class="apresentacao__input" type="number" id="segundovalor">
+                    </div>
+                </section>
+                
+            </section>
+            <div class="aporesentacao__operacoes">
+                <button class="apresentacao__btn__operacoes" onclick="somar(event)">+</button>
+                <button class="apresentacao__btn__operacoes" onclick="subtrair(event)">-</button>
+                <button class="apresentacao__btn__operacoes" onclick="multiplicar(event)">*</button>
+                <button class="apresentacao__btn__operacoes" onclick="dividir(event)">/</button>
+            </div>
+            <section id="resultadooperacao">
+                    <p class="apresentacao__paragrafos">O resultado é: </p>
+                    <div class="container__resultado"><span id="resultado"></span></div>
+            </section>
+        </section>
+       <img src="assets/Calculadora.png" alt="Ilustração de uma calculadora">
+    </form>
+   </main>
+    <footer class="rodape">Desenvolvido por <span id="span__rodape">Matheus Ferrarez</span></footer>
+    <script src="main.js"></script>
+</body>
+</html>
